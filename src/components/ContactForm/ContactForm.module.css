@@ -1,0 +1,30 @@
+.form {
+	padding: 20px;
+	border: 1px solid #fefefe;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 50px;
+	gap: 20px;
+	width: fit-content;
+}
+
+.input {
+	padding: 0 10px;
+	border: 1px solid #fefefe;
+	border-radius: 5px;
+	width: 300px;
+
+	height: 50px;
+	font-size: 16px;
+	margin: 5px 0 20px;
+	background-color: transparent;
+}
+
+.btn {
+	display: block;
+	border: 1px solid #cecece;
+	border-radius: 5px;
+	height: 50%;
+}
