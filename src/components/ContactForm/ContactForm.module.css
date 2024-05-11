@@ -1,27 +1,27 @@
 .form {
-	padding: 20px;
+	padding: 20px 0;
 	border: 1px solid #fefefe;
 	border-radius: 5px;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	margin-bottom: 50px;
-	gap: 20px;
-	width: fit-content;
+	gap: 40px;
+	width: 410px;
 }
 
 .wrapper {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	position: relative;
 }
 
 .input {
 	padding: 0 10px;
 	border: 1px solid #fefefe;
 	border-radius: 5px;
-	width: 300px;
-
+	width: 340px;
 	height: 50px;
 	font-size: 16px;
 	margin-top: 5px;
@@ -29,6 +29,7 @@
 }
 
 .btn {
+	margin-top: 15px;
 	display: block;
 	border: 1px solid #cecece;
 	border-radius: 5px;
@@ -37,6 +38,8 @@
 
 .error {
 	color: red;
+	position: absolute;
+	bottom: -25px;
 }
 
 .label {

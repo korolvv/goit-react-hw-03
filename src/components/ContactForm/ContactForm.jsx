@@ -6,14 +6,12 @@ import { useId } from "react";
 
 const FeedbackSchema = Yup.object().shape({
 	name: Yup.string()
+		.matches(/^[A-Za-z\s]+$/, "Input must contain only letters")
 		.min(2, "Too Short!")
 		.max(50, "Too Long!")
-		.required("Required"),
+		.required("Name is required"),
 	number: Yup.string()
-		.matches(
-			/^\d{3}-\d{2}-\d{2}$/,
-			"Phone number must be in the format XXX-XX-XX"
-		)
+		.matches(/^[\d\-()]+$/, "Input must contain only numbers")
 		.required("Phone number is required"),
 });
 
@@ -45,6 +43,7 @@ export default function ContactForm({ onAdd }) {
 							Name
 						</label>
 						<Field
+							type="text"
 							id={`${labelId}-name`}
 							className={css.input}
 							name="name"></Field>
@@ -56,6 +55,7 @@ export default function ContactForm({ onAdd }) {
 							Number
 						</label>
 						<Field
+							type="text"
 							id={`${labelId}-number`}
 							className={css.input}
 							name="number"></Field>
