@@ -18,9 +18,9 @@ const FeedbackSchema = Yup.object().shape({
 });
 
 const initialValues = {
+	id: "",
 	name: "",
 	number: "",
-	id: "",
 };
 
 export default function ContactForm({ onAdd }) {

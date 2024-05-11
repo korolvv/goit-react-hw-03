@@ -4,6 +4,10 @@
 	align-items: center;
 }
 
+h1 {
+	margin-bottom: 70px;
+}
+
 ul {
 	margin: 0;
 	padding: 0;
