@@ -14,7 +14,12 @@ function App() {
 		setContacts((prevValue) => {
 			return [...prevValue, values];
 		});
-		console.log(contacts);
+	};
+
+	const deleteUser = (id) => {
+		setContacts((prevValue) => {
+			return prevValue.filter((contact) => contact.id !== id);
+		});
 	};
 
 	const searchFilter = contacts.filter((contact) =>
@@ -26,7 +31,7 @@ function App() {
 			<h1>Phonebook</h1>
 			<ContactForm onAdd={addUser} />
 			<SearchBox value={filter} onFilter={setFilter} />
-			<ContactList data={searchFilter} />
+			<ContactList data={searchFilter} onDelete={deleteUser} />
 		</>
 	);
 }

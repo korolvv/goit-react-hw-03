@@ -10,6 +10,12 @@
 	width: fit-content;
 }
 
+.wrapper {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
 .input {
 	padding: 0 10px;
 	border: 1px solid #fefefe;
@@ -18,7 +24,7 @@
 
 	height: 50px;
 	font-size: 16px;
-	margin: 5px 0 20px;
+	margin-top: 5px;
 	background-color: transparent;
 }
 
@@ -27,4 +33,12 @@
 	border: 1px solid #cecece;
 	border-radius: 5px;
 	height: 50%;
+}
+
+.error {
+	color: red;
+}
+
+.label {
+	font-size: 20px;
 }
